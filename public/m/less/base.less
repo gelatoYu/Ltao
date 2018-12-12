@@ -1,0 +1,96 @@
+/* 设置公共变量 */
+
+@main-color: #006699;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* 公共头部区域样式*/
+
+#header {
+    position: fixed;
+    width: 100vw; // display: flex;
+    height: .45rem;
+    padding-left: .45rem;
+    padding-right: .45rem;
+    background-color: @main-color;
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 9999;
+    h4 {
+        width: 2.85rem;
+        text-align: center;
+        line-height: .45rem;
+        margin: 0;
+        font-weight: normal;
+    }
+    a {
+        width: .45rem;
+        height: .45rem;
+        position: absolute;
+        text-align: center;
+        line-height: .45rem;
+        color: #fff;
+        &.jiantou {
+            left: 0;
+        }
+        &.search {
+            right: 0;
+            top: 0;
+        }
+    }
+    form {       
+        input {
+            width: 2.85rem; 
+            line-height: .45rem; 
+            margin-bottom: 0rem;
+            margin-top: 5px;
+            background-color: #fff;
+           font-size: 0.14rem;
+            &::-ms-input-placeholder {
+                text-align: left;
+            }
+            &::-webkit-input-placeholder {
+                text-align: left;
+            }
+        }
+    }
+}
+
+/* 公共底部区域样式*/
+
+#footer {
+    position: fixed;
+    width: 100vw;
+    height: .45rem;
+    background-color: @main-color;
+    z-index: 9999;
+    left: 0;
+    bottom: 0;
+    ul {
+        display: flex;
+        li {
+            width: 25%;
+            a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: .085rem 0;
+                color: #fff;
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+}

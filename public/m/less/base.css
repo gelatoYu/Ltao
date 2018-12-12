@@ -1,0 +1,86 @@
+/* 设置公共变量 */
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+/* 公共头部区域样式*/
+#header {
+  position: fixed;
+  width: 100vw;
+  height: .45rem;
+  padding-left: .45rem;
+  padding-right: .45rem;
+  background-color: #006699;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 9999;
+}
+#header h4 {
+  width: 2.85rem;
+  text-align: center;
+  line-height: .45rem;
+  margin: 0;
+  font-weight: normal;
+}
+#header a {
+  width: .45rem;
+  height: .45rem;
+  position: absolute;
+  text-align: center;
+  line-height: .45rem;
+  color: #fff;
+}
+#header a.jiantou {
+  left: 0;
+}
+#header a.search {
+  right: 0;
+  top: 0;
+}
+#header form input {
+  width: 2.85rem;
+  line-height: .45rem;
+  margin-bottom: 0rem;
+  margin-top: 5px;
+  background-color: #fff;
+  font-size: 0.14rem;
+}
+#header form input::-ms-input-placeholder {
+  text-align: left;
+}
+#header form input::-webkit-input-placeholder {
+  text-align: left;
+}
+/* 公共底部区域样式*/
+#footer {
+  position: fixed;
+  width: 100vw;
+  height: .45rem;
+  background-color: #006699;
+  z-index: 9999;
+  left: 0;
+  bottom: 0;
+}
+#footer ul {
+  display: flex;
+}
+#footer ul li {
+  width: 25%;
+}
+#footer ul li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: .085rem 0;
+  color: #fff;
+}
+#footer ul li a span {
+  display: block;
+}

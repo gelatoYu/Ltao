@@ -1,0 +1,175 @@
+/* 设置公共变量 */
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+/* 公共头部区域样式*/
+#header {
+  position: fixed;
+  height: .45rem;
+  padding-left: .45rem;
+  padding-right: .45rem;
+  background-color: #006699;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 9999;
+}
+#header h4 {
+  width: 2.85rem;
+  text-align: center;
+  line-height: .45rem;
+  margin: 0;
+  font-weight: normal;
+}
+#header a {
+  width: .45rem;
+  height: .45rem;
+  position: absolute;
+  text-align: center;
+  line-height: .45rem;
+  right: 0;
+  top: 0;
+  color: #fff;
+}
+/* 公共底部区域样式*/
+#footer {
+  position: fixed;
+  width: 100vw;
+  height: .45rem;
+  background-color: #006699;
+  z-index: 9999;
+  left: 0;
+  bottom: 0;
+}
+#footer ul {
+  display: flex;
+}
+#footer ul li {
+  width: 25%;
+}
+#footer ul li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: .085rem 0;
+  color: #fff;
+}
+#footer ul li a span {
+  display: block;
+}
+body {
+  padding: .45rem 0;
+  height: 100vh;
+}
+#main {
+  position: relative;
+  height: 100%;
+}
+/* 导航条区域样式*/
+.mui-scrollbar-vertical .mui-scrollbar-indicator {
+  background: #b203f7;
+}
+#nav {
+  padding: .1rem;
+}
+#nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#nav ul li {
+  width: 33.33%;
+}
+#nav ul li a {
+  display: block;
+}
+#nav ul li a img {
+  width: 100%;
+}
+/* 广告区域样式*/
+#banner {
+  display: flex;
+  padding: 0 .1rem;
+}
+#banner .banner-left {
+  flex: 2;
+}
+#banner .banner-left a {
+  display: flex;
+  width: 100%;
+}
+#banner .banner-left a img {
+  width: 50%;
+  height: 1.2rem;
+}
+#banner .banner-right {
+  flex: 1;
+}
+#banner .banner-right a img {
+  width: 100%;
+  height: 2.4rem;
+}
+/* 品牌区域样式*/
+#brand {
+  padding: .1rem;
+}
+#brand .brand-title a img {
+  width: 100%;
+}
+#brand .brand-lists ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#brand .brand-lists ul li {
+  width: 25%;
+}
+#brand .brand-lists ul li a img {
+  width: 100%;
+}
+/* 运动生活专区*/
+#sport,
+#women,
+#man {
+  padding: 0 .1rem;
+}
+#sport .sport-title a img,
+#women .sport-title a img,
+#man .sport-title a img {
+  width: 100%;
+}
+#sport .sport-life ul,
+#women .sport-life ul,
+#man .sport-life ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#sport .sport-life ul li,
+#women .sport-life ul li,
+#man .sport-life ul li {
+  width: 50%;
+  padding: .1rem 0;
+  background-color: #fff;
+}
+#sport .sport-life ul li a,
+#women .sport-life ul li a,
+#man .sport-life ul li a {
+  display: block;
+  text-align: center;
+  box-shadow: 0rem 0rem .02rem #ccc;
+}
+#sport .sport-life ul li a img,
+#women .sport-life ul li a img,
+#man .sport-life ul li a img {
+  width: 100%;
+}
+#sport .sport-life ul li a .btn,
+#women .sport-life ul li a .btn,
+#man .sport-life ul li a .btn {
+  margin-bottom: .1rem;
+}

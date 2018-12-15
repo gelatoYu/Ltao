@@ -8,7 +8,7 @@
     <title>分类</title>
     <link rel="stylesheet" href="lib/mui/css/mui.css">
     <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
-    <link rel="stylesheet/less" href="less/index.less">
+    <link rel="stylesheet/less" href="less/category.less">
     <script src="lib/less/less.js"></script>
     <script src="js/rem.js"></script>
 </head>
@@ -16,7 +16,7 @@
 <body>
     <!-- 头部区域 -->
     <header id="header">
-        <a href="#" class="fa fa-arrow-left jiantou"></a>
+        <a href="javascript:history.back();" class="fa fa-arrow-left jiantou"></a>
         <form action="#">
             <input type="search" name="search" id="search" placeholder="请输入要搜索的商品">
         </form>
@@ -25,13 +25,115 @@
     <!-- 分类主体区域 -->
     <main id="main">
         <!-- 左边栏区域 -->
-        <div class="category-left"></div>
-        <div class="category-right"></div>
+        <div class="category-left">
+            <!-- 区域滚动的父容器 -->
+            <div class="mui-scroll-wrapper">
+                <!-- 区域滚动的子容器 -->
+                <div class="mui-scroll">
+                    <!--这里放置真实显示的DOM内容-->
+                    <ul>
+                        <li class="active"><a href="#">运动馆</a></li>
+                        <li><a href="#">运动馆</a></li>
+                        <li><a href="#">运动馆</a></li>
+                        <li><a href="#">运动馆</a></li>
+                        <li><a href="#">运动馆</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="category-right">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!--这里放置真实显示的DOM内容-->
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/brand1.png" alt="">
+                                <p>耐克</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/brand1.png" alt="">
+                                <p>耐克</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/brand1.png" alt="">
+                                <p>耐克</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/brand1.png" alt="">
+                                <p>耐克</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/brand1.png" alt="">
+                                <p>耐克</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/brand1.png" alt="">
+                                <p>耐克</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer id="footer">
+        <ul>
+            <li>
+                <a href="index.html" class="fa fa-home active">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="category.html" class="fa fa-bars">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="buycar.html" class="fa fa-shopping-cart">
+                    <span>购物车</span>
+                </a>
+            </li>
+            <li>
+                <a href="personcenter.html" class="fa fa-user">
+                    <span>个人中心</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script id="categorLeftTpl" type="text/html">
+        {{each rows value index}}
+            <li class="{{index == 0 ? 'active' : ''}}"><a href="#" data-id="{{value.id}}">{{value.categoryName}}</a></li>
+        {{/each}}
+    </script>
+    <script id="categoryRightTpl" type="text/html">
+        {{if rows.length != 0}}
+        {{each rows value}}
+        <li>
+            <a href="#">
+                <img src="{{value.brandLogo}}" alt="">
+                <p>{{value.brandName}}</p>
+            </a>
+        </li>
+        {{/each}}
+        {{else}}
+            <p>您查找的品牌暂无数据</p>
+        {{/if}}
+    </script>
     <script src="lib/zepto/zepto.min.js"></script>
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/artTemplate/template-web.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/category.js"></script>
 </body>
 
 </html>

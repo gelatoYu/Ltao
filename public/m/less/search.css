@@ -59,50 +59,6 @@ body {
   font-size: 0.14rem;
   text-align: left;
 }
-/* 搜索表单公共区域样式*/
-.search-form form {
-  display: flex;
-  padding: .1rem;
-}
-.search-form form input {
-  flex: 1;
-  background-color: #fff;
-  border: 0.01rem solid #006699;
-  margin-bottom: 0;
-  text-align: left;
-  border-radius: 0.06rem 0 0 0.06rem;
-  font-size: 0.14rem;
-}
-.search-form form .search-btn {
-  width: .6rem;
-  background-color: #006699;
-  border-color: #006699;
-  border-radius: 0 0.06rem 0.06rem 0;
-}
-/* 商品清单公共样式*/
-.content ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-.content ul li {
-  width: 50%;
-  padding: .05rem .05rem;
-  background-color: #fff;
-}
-.content ul li a {
-  display: block;
-  text-align: center;
-  box-shadow: 0rem 0rem .02rem #ccc;
-}
-.content ul li a img {
-  width: 100%;
-}
-.content ul li a p.product-buy {
-  margin: 0;
-}
-.content ul li a .btn {
-  margin-bottom: .1rem;
-}
 /* 公共底部区域样式*/
 #footer {
   position: fixed;
@@ -132,4 +88,36 @@ body {
 }
 #footer ul li a.active {
   color: orange;
+}
+#main .search-form form {
+  display: flex;
+  padding: .1rem;
+}
+#main .search-form form input {
+  flex: 1;
+  background-color: #fff;
+  border: 0.01rem solid #006699;
+  margin-bottom: 0;
+  text-align: left;
+  border-radius: 0.06rem 0 0 0.06rem;
+  font-size: 0.14rem;
+}
+#main .search-form form .search-btn {
+  width: .6rem;
+  background-color: #006699;
+  border-color: #006699;
+  border-radius: 0 0.06rem 0.06rem 0;
+}
+#main .search-history .mui-card .mui-card-header {
+  font-size: 0.14rem;
+}
+#main .search-history .mui-card .mui-card-header a {
+  color: #666666;
+}
+#main .search-history .mui-card .mui-card-content .mui-table-view .mui-badge-primary {
+  background-color: #006699;
+}
+#main .search-history .mui-card .mui-card-content .mui-table-view .fa-close {
+  font-size: .14rem;
+  line-height: .17rem;
 }

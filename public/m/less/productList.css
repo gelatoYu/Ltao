@@ -80,24 +80,24 @@ body {
   border-radius: 0 0.06rem 0.06rem 0;
 }
 /* 商品清单公共样式*/
-.content ul {
+.sport-list ul {
   display: flex;
   flex-wrap: wrap;
 }
-.content ul li {
+.sport-list ul li {
   width: 50%;
   padding: .1rem 0;
   background-color: #fff;
 }
-.content ul li a {
+.sport-list ul li a {
   display: block;
   text-align: center;
   box-shadow: 0rem 0rem .02rem #ccc;
 }
-.content ul li a img {
+.sport-list ul li a img {
   width: 100%;
 }
-.content ul li a .btn {
+.sport-list ul li a .btn {
   margin-bottom: .1rem;
 }
 /* 公共底部区域样式*/
@@ -130,78 +130,26 @@ body {
 #footer ul li a.active {
   color: orange;
 }
+body {
+  background-color: #fff;
+}
 #main {
-  position: relative;
   height: 100%;
 }
-/* 导航条区域样式*/
-.mui-scrollbar-vertical .mui-scrollbar-indicator {
-  background: #b203f7;
-}
-#nav {
-  padding: .1rem;
-}
-#nav ul {
+#main .product-title ul {
   display: flex;
-  flex-wrap: wrap;
 }
-#nav ul li {
-  width: 33.33%;
-}
-#nav ul li a {
-  display: block;
-}
-#nav ul li a img {
-  width: 100%;
-}
-/* 广告区域样式*/
-#banner {
-  display: flex;
-  padding: 0 .1rem;
-}
-#banner .banner-left {
-  flex: 2;
-}
-#banner .banner-left a {
-  display: flex;
-  width: 100%;
-}
-#banner .banner-left a img {
-  width: 50%;
-  height: 1.2rem;
-}
-#banner .banner-right {
-  flex: 1;
-}
-#banner .banner-right a img {
-  width: 100%;
-  height: 2.4rem;
-}
-/* 品牌区域样式*/
-#brand {
-  padding: .1rem;
-}
-#brand .brand-title a img {
-  width: 100%;
-}
-#brand .brand-lists ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-#brand .brand-lists ul li {
+#main .product-title ul li {
   width: 25%;
 }
-#brand .brand-lists ul li a img {
-  width: 100%;
+#main .product-title ul li a {
+  display: block;
+  font-size: .14rem;
+  color: #666;
+  text-align: center;
+  background-color: rgba(204, 204, 204, 0.4);
+  line-height: .3rem;
 }
-/* 运动生活专区*/
-#sport,
-#women,
-#man {
-  padding: 0.1rem;
-}
-#sport .sport-title a img,
-#women .sport-title a img,
-#man .sport-title a img {
-  width: 100%;
+#main .product-title ul li.active a {
+  color: red;
 }

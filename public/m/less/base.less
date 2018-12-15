@@ -14,6 +14,11 @@ img {
     vertical-align: middle;
 }
 
+body {
+    padding: .45rem 0;
+    height: 100vh;
+}
+
 /* 公共头部区域样式*/
 
 #header {
@@ -49,19 +54,74 @@ img {
             top: 0;
         }
     }
-    form {       
+    form {
+        padding-top: .05rem;
         input {
-            width: 2.85rem; 
-            line-height: .45rem; 
-            margin-bottom: 0rem;
-            margin-top: 5px;
+            width: 2.85rem;
+            line-height: .45rem;
+            margin-bottom: 0rem; // margin-top: 5px;
             background-color: #fff;
-           font-size: 0.14rem;
-            &::-ms-input-placeholder {
-                text-align: left;
-            }
-            &::-webkit-input-placeholder {
-                text-align: left;
+            font-size: 0.14rem; // &::-ms-input-placeholder {
+            //     text-align: left;
+            // }
+            // &::-webkit-input-placeholder {
+            //     text-align: left;
+            // }
+            text-align: left;
+        }
+    }
+}
+
+/* 搜索表单公共区域样式*/
+
+.search-form {
+    form {
+        display: flex;
+        padding: .1rem;
+        input {
+            flex: 1;
+            background-color: #fff;
+            border: .01rem solid @main-color;
+            margin-bottom: 0;
+            text-align: left;
+            border-radius: 0.06rem 0 0 0.06rem;
+            font-size: 0.14rem;
+        }
+        .search-btn {
+            width: .6rem;
+            background-color: @main-color;
+            border-color: @main-color;
+            border-radius: 0 0.06rem 0.06rem 0;
+        }
+    }
+}
+
+
+/* 商品清单公共样式*/
+.content {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: 50%;
+            padding: .05rem .05rem;
+            background-color: #fff;
+            a {
+                // margin-top: .1rem;
+                display: block;
+                text-align: center;
+                box-shadow: 0rem 0rem .02rem #ccc;
+                // border: .01rem solid #ccc;
+                
+                img {
+                    width: 100%;
+                }
+                p.product-buy {
+                    margin: 0;
+                }
+                .btn {
+                    margin-bottom: .1rem;
+                }
             }
         }
     }
@@ -89,7 +149,11 @@ img {
                 color: #fff;
                 span {
                     display: block;
+                    padding-top: 0.02rem
                 }
+            }
+            a.active {
+                color: orange;
             }
         }
     }

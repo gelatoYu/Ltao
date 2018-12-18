@@ -1,15 +1,14 @@
 @import 'base.less';
-
 body {
     background-color: #fff;
 }
 
 #main {
+    position: relative;
     height: 100%;
-    .product-title{
+    .product-title {
         ul {
             display: flex;
-
             li {
                 width: 25%;
                 a {
@@ -17,19 +16,15 @@ body {
                     font-size: .14rem;
                     color: #666;
                     text-align: center;
-                    background-color: rgba(204, 204, 204,0.4);
+                    background-color: rgba(204, 204, 204, 0.4);
                     line-height: .3rem;
-                    
                 }
                 &.active {
-                    a{
+                    a {
                         color: red;
                     }
                 }
             }
         }
-    }
-    .product-list {
-        .content {}
     }
 }

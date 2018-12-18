@@ -12,11 +12,16 @@ li {
 
 img {
     vertical-align: middle;
+    border: 0;
 }
 
 body {
     padding: .45rem 0;
     height: 100vh;
+    font-size: .14rem;
+}
+input {
+    font-size: .14rem;
 }
 
 /* 公共头部区域样式*/
@@ -49,7 +54,7 @@ body {
         &.jiantou {
             left: 0;
         }
-        &.search {
+        &.fa-right {
             right: 0;
             top: 0;
         }
@@ -61,6 +66,7 @@ body {
             line-height: .45rem;
             margin-bottom: 0rem; // margin-top: 5px;
             background-color: #fff;
+            color: black;
             font-size: 0.14rem; // &::-ms-input-placeholder {
             //     text-align: left;
             // }
@@ -115,6 +121,13 @@ body {
                 
                 img {
                     width: 100%;
+                }
+                .product-name {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
                 p.product-buy {
                     margin: 0;

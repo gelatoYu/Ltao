@@ -21,81 +21,86 @@
     </header>
     <!-- 分类主体区域 -->
     <main id="main">
-        <!-- 搜索表单 -->
-        <div class="search-form">
-            <form action="#">
-                <input type="search" name="search" id="input-search" placeholder="请输入要搜索的商品">
-                <button type="button" class="mui-btn mui-btn-primary search-btn">搜索</button>
-            </form>
-        </div>
-        <!-- 商品列表 -->
-        <div class="product-list">
-            <div class="product-title">
-                <!-- ul>li*4>a[href="#"]{上架时间}>i.fa.fa-angle-down -->
-                <ul>
-                    <li class="active"><a href="#">上架时间<i class="fa fa-angle-down"></i></a></li>
-                    <li><a href="#">价格<i class="fa fa-angle-down"></i></a></li>
-                    <li><a href="#">销量<i class="fa fa-angle-down"></i></a></li>
-                    <li><a href="#">折扣<i class="fa fa-angle-down"></i></a></li>
-                </ul>
+        <div class="mui-scroll-wrapper" id="refreshContainer">
+            <div class="mui-scroll">
+                <!-- 搜索表单 -->
+                <div class="search-form">
+                    <form action="#">
+                        <input type="search" name="search" id="input-search" placeholder="请输入要搜索的商品">
+                        <button type="button" class="mui-btn mui-btn-primary search-btn">搜索</button>
+                    </form>
+                </div>
+                <!-- 商品列表 -->
+                <div class="product-list">
+                    <div class="product-title">
+                        <!-- ul>li*4>a[href="#"]{上架时间}>i.fa.fa-angle-down -->
+                        <ul>
+                            <li class="active"><a href="#">上架时间<i class="fa fa-angle-down"></i></a></li>
+                            <li><a href="#" data-sort="1" data-sort-type="price">价格<i class="fa fa-angle-down"></i></a></li>
+                            <li><a href="#" data-sort="1" data-sort-type="num">销量<i class="fa fa-angle-down"></i></a></li>
+                            <li><a href="#">折扣<i class="fa fa-angle-down"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <a href="#" class="product">
+                                    <img class="product-img" src="images/product.jpg" alt="">
+                                    <p class="product-name">adidas阿迪达斯 男式 场下休闲篮球鞋S83700</p>
+                                    <p class="product-price">
+                                        <span>￥566.00</span>
+                                        <del>￥888.00</del>
+                                    </p>
+                                    <p class="product-buy">
+                                        <button type="button" class="mui-btn mui-btn-primary btn">立即购买</button>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="product">
+                                    <img class="product-img" src="images/product.jpg" alt="">
+                                    <p class="product-name">adidas阿迪达斯 男式 场下休闲篮球鞋S83700</p>
+                                    <p class="product-price">
+                                        <span>￥566.00</span>
+                                        <del>￥888.00</del>
+                                    </p>
+                                    <p class="product-buy">
+                                        <button type="button" class="mui-btn mui-btn-primary btn">立即购买</button>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="product">
+                                    <img class="product-img" src="images/product.jpg" alt="">
+                                    <p class="product-name">adidas阿迪达斯 男式 场下休闲篮球鞋S83700</p>
+                                    <p class="product-price">
+                                        <span>￥566.00</span>
+                                        <del>￥888.00</del>
+                                    </p>
+                                    <p class="product-buy">
+                                        <button type="button" class="mui-btn mui-btn-primary btn">立即购买</button>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="product">
+                                    <img class="product-img" src="images/product.jpg" alt="">
+                                    <p class="product-name">adidas阿迪达斯 男式 场下休闲篮球鞋S83700</p>
+                                    <p class="product-price">
+                                        <span>￥566.00</span>
+                                        <del>￥888.00</del>
+                                    </p>
+                                    <p class="product-buy">
+                                        <button type="button" class="mui-btn mui-btn-primary btn">立即购买</button>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="content">
-                <ul>
-                    <li>
-                        <a href="#" class="product">
-                            <img class="product-img" src="images/product.jpg" alt="">
-                            <p class="product-name">adidas阿迪达斯 男式 场下休闲篮球鞋S83700</p>
-                            <p class="product-price">
-                                <span>￥566.00</span>
-                                <del>￥888.00</del>
-                            </p>
-                            <p class="product-buy">
-                                <button type="button" class="mui-btn mui-btn-primary btn">立即购买</button>
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="product">
-                            <img class="product-img" src="images/product.jpg" alt="">
-                            <p class="product-name">adidas阿迪达斯 男式 场下休闲篮球鞋S83700</p>
-                            <p class="product-price">
-                                <span>￥566.00</span>
-                                <del>￥888.00</del>
-                            </p>
-                            <p class="product-buy">
-                                <button type="button" class="mui-btn mui-btn-primary btn">立即购买</button>
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="product">
-                            <img class="product-img" src="images/product.jpg" alt="">
-                            <p class="product-name">adidas阿迪达斯 男式 场下休闲篮球鞋S83700</p>
-                            <p class="product-price">
-                                <span>￥566.00</span>
-                                <del>￥888.00</del>
-                            </p>
-                            <p class="product-buy">
-                                <button type="button" class="mui-btn mui-btn-primary btn">立即购买</button>
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="product">
-                            <img class="product-img" src="images/product.jpg" alt="">
-                            <p class="product-name">adidas阿迪达斯 男式 场下休闲篮球鞋S83700</p>
-                            <p class="product-price">
-                                <span>￥566.00</span>
-                                <del>￥888.00</del>
-                            </p>
-                            <p class="product-buy">
-                                <button type="button" class="mui-btn mui-btn-primary btn">立即购买</button>
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
+
     </main>
     <footer id="footer">
         <ul>
@@ -115,7 +120,7 @@
                 </a>
             </li>
             <li>
-                <a href="personcenter.html" class="fa fa-user">
+                <a href="user.html" class="fa fa-user">
                     <span>个人中心</span>
                 </a>
             </li>
@@ -124,7 +129,7 @@
     <script type="text/html" id="productListTpl">
         {{each data value}}
         <li>
-            <a href="#" class="product">
+            <a class="product">
                 <img class="product-img" src="{{value.pic[0].picAddr}}" alt="">
                 <p class="product-name">{{value.proName}}</p>
                 <p class="product-price">
@@ -132,7 +137,7 @@
                     <del>￥{{value.oldPrice}}</del>
                 </p>
                 <p class="product-buy">
-                    <button type="button" class="mui-btn mui-btn-primary btn">立即购买</button>
+                    <button type="button" class="mui-btn mui-btn-primary btn" data-id="{{value.id}}">立即购买</button>
                 </p>
             </a>
         </li>

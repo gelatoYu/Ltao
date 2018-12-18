@@ -1,0 +1,42 @@
+@import 'base.less';
+#main {
+    font-size: .14rem;
+    height: 100%;
+    position: relative;
+    .productInfo {
+        padding: .1rem;
+        ul {
+            span {
+                font-weight: 600;
+            }
+            .size {
+                line-height: .38rem;
+            }
+        }
+    }
+}
+
+#footer {
+    background-color: #ccc;
+    
+    ul {
+        display: flex;
+        li {
+            flex: 1;
+            padding: .05rem; 
+            button {
+                width: 100%;   
+            }
+        }
+        li:first-child {
+            width: .60rem;
+            flex: none;
+            .shopping-car {
+                color: #666666;
+                // display: block-inline;
+                text-align: center;
+                font-size: .2rem;
+            }
+        }
+    }
+}

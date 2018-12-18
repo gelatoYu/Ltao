@@ -6,11 +6,14 @@
     .productInfo {
         padding: .1rem;
         ul {
-            span {
-                font-weight: 600;
-            }
-            .size {
-                line-height: .38rem;
+            li {
+                span {
+                    font-weight: 600;
+                }
+                .size {
+                    line-height: .38rem;
+                    text-align: left;
+                }
             }
         }
     }
@@ -18,22 +21,20 @@
 
 #footer {
     background-color: #ccc;
-    
     ul {
         display: flex;
         li {
             flex: 1;
-            padding: .05rem; 
+            padding: .05rem;
             button {
-                width: 100%;   
+                width: 100%;
             }
         }
         li:first-child {
             width: .60rem;
             flex: none;
             .shopping-car {
-                color: #666666;
-                // display: block-inline;
+                color: #666666; // display: block-inline;
                 text-align: center;
                 font-size: .2rem;
             }

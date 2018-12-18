@@ -8,6 +8,12 @@ $(function () {
 
     $.ajax({
         url: '/category/queryTopCategory',
+        beforeSend:function () { 
+            $('.loading').show();
+         },
+        complete:function () { 
+            $('.loading').hide();
+          },
         success:function (data) { 
             console.log(data);
             var html = template('categorLeftTpl',data);
@@ -30,6 +36,12 @@ $(function () {
     $.ajax({
         url:'/category/querySecondCategory',
         data:{id:id},
+        beforeSend:function () { 
+            $('.loading').show();
+         },
+        complete:function () { 
+            $('.loading').hide();
+          },
         success:function (data) { 
             console.log(data);
             

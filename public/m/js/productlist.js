@@ -156,6 +156,12 @@ $(function () {
                 pageSize: 4, //每页大小
                 proName: search //搜索的关键字
             },
+            beforeSend:function () { 
+                $('.loading').show();
+             },
+            complete:function () { 
+                $('.loading').hide();
+              },
             success: function (data) {
                 console.log(data);
 
